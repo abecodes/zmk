@@ -66,7 +66,7 @@
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "balanced";
-            bindings = <&none>, <&to 0>;
+            bindings = <&none &to 0>;
         };
         tln1: taplayernone1 {
             compatible = "zmk,behavior-hold-tap";
@@ -75,7 +75,7 @@
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "balanced";
-            bindings = <&none>, <&to 1>;
+            bindings = <&none &to 1>;
         };
         tln2: taplayernone2 {
             compatible = "zmk,behavior-hold-tap";
@@ -84,7 +84,7 @@
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "balanced";
-            bindings = <&none>, <&to 2>;
+            bindings = <&none &to 2>;
         };
 	    td: tapdance {
             compatible = "zmk,behavior-hold-tap";
