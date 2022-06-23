@@ -61,7 +61,7 @@
         };
         tln0: taplayernone {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER_NONE";
+            label = "TAP_LAYER_NONE_0";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
@@ -70,7 +70,7 @@
         };
         tln1: taplayernone {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER_NONE";
+            label = "TAP_LAYER_NONE_1";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
@@ -79,7 +79,7 @@
         };
         tln2: taplayernone {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER_NONE";
+            label = "TAP_LAYER_NONE_2";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
