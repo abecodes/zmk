@@ -112,9 +112,9 @@
 
         second_layer {
             bindings = <
-                &kp F1 &kp F2 &kp F3 &kp F4 &none                   &tln 1 0 &kp HOME &kp END &kp DEL &none
+                &kp F1 &kp F2 &kp F3 &kp F4 &bt BT_CLR              &tln 1 0 &kp HOME &kp END &kp DEL &none
                 &kp F5 &kp F6 &kp F7 &kp F8 &none                   &tln 1 1 &kp INS &kp PG_DN &kp PG_UP &none
-                &kp F9 &kp F10 &kp F11 &kp F12 &none                &tln 1 2 &bt BT_CLR &out OUT_TOG &bootloader &reset
+                &kp F9 &kp F10 &kp F11 &kp F12 &bootloader          &tln 1 2 &bt BT_CLR &out OUT_TOG &bootloader &reset
                         &none &trans  		                                &trans &none
             >;
         };
