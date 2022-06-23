@@ -103,18 +103,18 @@
 
         first_layer {
             bindings = <
-                &kp TILDE &kp LBKT &kp RBKT &kp LBRC &none          &none &kp N1 &kp N2 &kp N3 &none
-                &kp BSLH &kp RBRC &kp LPAR &kp RPAR &none           &none &mt LEFT N4 &mt DOWN N5 &mt UP N6 &mt RIGHT N0
-                &kp PIPE &kp GRAVE &kp DQT &kp SQT &none            &none &kp N7 &kp N8 &kp N9 &none
+                &kp TILDE &kp LBKT &kp RBKT &kp LBRC &none          &tln 1 0 &kp N1 &kp N2 &kp N3 &none
+                &kp BSLH &kp RBRC &kp LPAR &kp RPAR &none           &tln 1 1 &mt LEFT N4 &mt DOWN N5 &mt UP N6 &mt RIGHT N0
+                &kp PIPE &kp GRAVE &kp DQT &kp SQT &none            &tln 1 2 &kp N7 &kp N8 &kp N9 &none
                         &none &trans  		                               &trans &none
             >;
         };
 
         second_layer {
             bindings = <
-                &kp F1 &kp F2 &kp F3 &kp F4 &bt BT_CLR              &none &kp HOME &kp END &kp DEL &none
-                &kp F5 &kp F6 &kp F7 &kp F8 &none                   &none &kp INS &kp PG_DN &kp PG_UP &none
-                &kp F9 &kp F10 &kp F11 &kp F12 &bootloader          &none &bt BT_CLR &out OUT_TOG &bootloader &reset
+                &kp F1 &kp F2 &kp F3 &kp F4 &bt BT_CLR              &tln 1 0 &kp HOME &kp END &kp DEL &none
+                &kp F5 &kp F6 &kp F7 &kp F8 &none                   &tln 1 1 &kp INS &kp PG_DN &kp PG_UP &none
+                &kp F9 &kp F10 &kp F11 &kp F12 &bootloader          &tln 1 2 &bt BT_CLR &out OUT_TOG &bootloader &reset
                         &none &trans  		                                &trans &none
             >;
         };
