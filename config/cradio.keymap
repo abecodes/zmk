@@ -59,28 +59,28 @@
 
         default_layer {
             bindings = <
-                &kp Q &kp D &kp R &kp W &kp B                       &kp J &kp F &kp U &kp P &kp SEMI
-                &kp A &kp S &mt LALT H &mt LGUI T &qlh G 1          &qlh Y 1 &mt RGUI N &mt RALT E &kp O &kp I
-                &kp Z &kp X &kp M &kp C &qlh V 2                    &qlh K 2 &kp L &kp COMMA &kp DOT &kp SLASH
-                        &qth LCTRL MINUS &qth LSHIFT SPACE  		        &qth RSHIFT BSPC &qth RCTRL EQUAL
+                &kp Q &kp D &kp R &kp W &kp B                           &kp J &kp F &kp U &kp P &kp SEMI
+                &kp A &kp S &mt LALT H &mt LGUI T &qlh G 1              &qlh Y 1 &mt RGUI N &mt RALT E &kp O &kp I
+                &kp Z &kp X &kp M &kp C &qlh V 2                        &qlh K 2 &kp L &kp COMMA &kp DOT &kp SLASH
+                        &qth LCTRL MINUS &qth LSHIFT SPACE  		            &qth RSHIFT BSPC &qth RCTRL EQUAL
             >;
         };
 
         first_layer {
             bindings = <
-                &kp TILDE &kp LBKT &kp RBKT &kp LBRC &none          &none &kp N1 &kp N2 &kp N3 &none
-                &kp BSLH &kp RBRC &kp LPAR &kp RPAR &none           &none &mt LEFT N4 &mt DOWN N5 &mt UP N6 &mt RIGHT N0
-                &kp PIPE &kp GRAVE &kp DQT &kp SQT &none            &none &kp N7 &kp N8 &kp N9 &none
-                        &kp TAB &trans  		                            &trans &kp RET
+                &kp TILDE &kp LBKT &kp RBKT &kp LBRC &none              &none &kp N1 &kp N2 &kp N3 &none
+                &kp BSLH &kp RBRC &mt LALT LPAR &mt LGUI RPAR &none     &none &mt RGUI N4 &mt RALT N5 &kp N6 &kp N0
+                &kp PIPE &kp GRAVE &kp DQT &kp SQT &none                &none &kp N7 &kp N8 &kp N9 &none
+                        &kp TAB &trans  		                                &kp RET &kp ESC
             >;
         };
 
         second_layer {
             bindings = <
-                &kp F1 &kp F2 &kp F3 &kp F4 &bt BT_CLR              &trans &kp HOME &kp END &kp DEL &none
-                &kp F5 &kp F6 &kp F7 &kp F8 &bt BT_NXT              &trans &kp INS &kp PG_DN &kp PG_UP &none
-                &kp F9 &kp F10 &kp F11 &kp F12 &bootloader          &trans &none &none &bootloader &reset
-                        &kp CAPS &trans  		                            &trans &kp ESC
+                &kp F1 &kp F2 &kp F3 &kp F4 &bootloader                 &none &kp HOME &kp END &kp DEL &reset
+                &kp F5 &kp F6 &mt LALT F7 &mt LGUI F8 &none             &none &qth RGUI LEFT &qth RALT DOWN &kp UP &kp RIGHT
+                &kp F9 &kp F10 &kp F11 &kp F12 &none                    &none &kp INS &kp PG_DN &kp PG_UP &bootloader
+                        &bt BT_CLR &bt BT_NXT  		                            &none &none
             >;
         };
     };
