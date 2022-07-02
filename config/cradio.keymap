@@ -203,6 +203,16 @@
             flavor = "tap-preferred";
             bindings = <&kp &kp &kp>, <&kp>;
         };
+        ens: exit_num_spc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "exit_num_spc";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <125>;
+            global-quick-tap;
+            flavor = "tap-preferred";
+            bindings = <&exit_num_spc_hold>, <&exit_num_spc_tab>;
+        };
     };
 
     keymap {
@@ -251,7 +261,7 @@
                 &none &none &none &kp PERCENT &kp MINUS                                               &kp SLASH &none &kp DOT &none &kp COMMA
                 &kp N7 &kp N5 &kp N3 &kp N1 &kp PLUS                                                  &kp STAR &kp N0 &kp N2 &kp N4 &kp N6
                 &none &none &none &kp N9 &kp EQUAL                                                    &none &kp N8 &kp LPAR &kp RPAR &none
-                        &none &mt exit_num_spc_hold exit_num_spc_tab 		                                  &tog NUM &none
+                        &none &ens 0 0		                                                                  &tog NUM &none
             >;
         };
 
