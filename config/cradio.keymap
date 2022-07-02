@@ -73,7 +73,7 @@
         };
         combo_bckspc {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <17 18>;
             bindings = <&kp BSPC>;
         };
         combo_esc {
@@ -124,14 +124,20 @@
     };
 
     macros {
-        exit_num_spc: exit_num_spc {
-            label = "exit_num_spc";
+        exit_num_spc_tab: exit_num_spc_tab {
+            label = "exit_num_spc_tab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &tog NUM>;
+        };
+        exit_num_spc_hold: exit_num_spc_hold {
+            label = "exit_num_spc_hold";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &mo NAV>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &tog NUM>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo NAV &tog NUM>
                 ;
         };
         gt_eq: gt_eq {
@@ -245,7 +251,7 @@
                 &none &none &none &kp PERCENT &kp MINUS                                               &kp SLASH &none &kp DOT &none &kp COMMA
                 &kp N7 &kp N5 &kp N3 &kp N1 &kp PLUS                                                  &kp STAR &kp N0 &kp N2 &kp N4 &kp N6
                 &none &none &none &kp N9 &kp EQUAL                                                    &none &kp N8 &kp LPAR &kp RPAR &none
-                        &none &exit_num_spc  		                                                          &tog NUM &none
+                        &none &mt exit_num_spc_hold exit_num_spc_tab 		                                  &tog NUM &none
             >;
         };
 
