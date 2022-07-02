@@ -216,7 +216,7 @@
             bindings = <
                 &slt MAIN MAIN &none &none &none &none                                                &kp SLASH &kp QMARK &kp DOT &kp HASH &kp COMMA
                 &sht LSHIFT &sht LCTRL &sht LALT &sht LGUI &none                                      &kp STAR &kp COLON &kp LBRC &kp RBRC &dblh PIPE PIPE
-                &none &none &none &none &none                                                         &kp BLSH &kp AT &kp LPAR &kp RPAR &kp UNDER
+                &none &none &none &none &none                                                         &kp BSLH &kp AT &kp LPAR &kp RPAR &kp UNDER
                         &none &none  		                                                                  &none &slt FUN FUN
             >;
         };
