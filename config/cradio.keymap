@@ -130,7 +130,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &mo NAV>
-                , <&macro_tap &kb SPACE>
+                , <&macro_tap &kp SPACE>
                 , <&macro_release &tog 0>
                 ;
         };
