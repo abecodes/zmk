@@ -119,7 +119,7 @@
         combo_num_word {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&to NUM>;
+            bindings = <&tog NUM>;
         };
     };
 
@@ -131,7 +131,7 @@
             bindings
                 = <&macro_press &mo NAV>
                 , <&macro_tap &kp SPACE>
-                , <&macro_release &tog 0>
+                , <&macro_release &tog NUM>
                 ;
         };
         gt_eq: gt_eq {
@@ -245,7 +245,7 @@
                 &none &none &none &kp PERCENT &kp MINUS                                               &kp SLASH &none &kp DOT &none &kp COMMA
                 &kp N7 &kp N5 &kp N3 &kp N1 &kp PLUS                                                  &kp STAR &kp N0 &kp N2 &kp N4 &kp N6
                 &none &none &none &kp N9 &kp EQUAL                                                    &none &kp N8 &kp LPAR &kp RPAR &none
-                        &none &exit_num_spc  		                                                          &tog 0 &none
+                        &none &exit_num_spc  		                                                          &tog NUM &none
             >;
         };
 
