@@ -239,7 +239,7 @@
         right_mods_layer {
             bindings = <
                 &kp GRAVE &kp EXCL &kp AMPS &kp PRCNT &kp MINUS                                       &none &none &none &none &slt MAIN MAIN
-                &kp SQT &kp LT &dblh GT GT &kp SEMI &kp PLUS                                          &none &sht RGUI RGUI &sht RALT RALT &sht RCTRL RCTRL &sht RSHIFT RSHIFT
+                &kp SQT &kp LT &kp GT &kp SEMI &kp PLUS                                               &none &sht RGUI RGUI &sht RALT RALT &sht RCTRL RCTRL &sht RSHIFT RSHIFT
                 &kp DQT &kp LBKT &kp RBKT &kp TILDE &kp EQUAL                                         &none &none &none &none &none
                         &slt FUN FUN &none  		                                                          &none &none
             >;
