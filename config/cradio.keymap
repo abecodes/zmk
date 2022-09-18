@@ -221,7 +221,7 @@
             bindings = <
                 &mt LS(Y) Y &mt LS(H) H &mt LS(P) P &mt LS(M) M &mt LS(B) B                           &mt RS(X) X &mt RS(F) F &kp DOT &mt RS(U) U &kp COMMA
                 &mt LS(O) O &mt LS(N) N &mt LS(S) S &mt LS(I) I &mt LS(K) K                           &mt RS(J) J &mt RS(T) T &mt RS(R) R &mt RS(A) A &mt RS(C) C
-                &mt SQT DQT &mt LS(W) W &mt LS(G) G &mt LS(L) L &mt &nte 0 EQUAL                      &mt MINUS UNDER &mt RS(D) D &kp LPAR &kp RPAR &mt RS(V) V
+                &mt SQT DQT &mt LS(W) W &mt LS(G) G &mt LS(L) L &mt &nte EQUAL                      &mt MINUS UNDER &mt RS(D) D &kp LPAR &kp RPAR &mt RS(V) V
                         &slt LMOD LMOD &lt NAV SPACE  		                                                  &mt RS(E) E &slt RMOD RMOD
             >;
         };
