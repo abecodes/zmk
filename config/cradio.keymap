@@ -37,6 +37,7 @@
     // release-after-ms = <2000>;
 };
 
+// make this more responsive
 &sk {
     // release-after-ms = <2000>;
     quick-release;
@@ -56,6 +57,7 @@
           ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                       ╰────────╯ ╰────────╯
         */
+        // Add combo for /
         combo_del {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -140,6 +142,12 @@
                 , <&macro_release &mo NAV &tog NUM>
                 ;
         };
+        nt_eq: nt_eq {
+            label = "nt_eq";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL>;
+        };
         gt_eq: gt_eq {
             label = "gt_eq";
             compatible = "zmk,behavior-macro";
@@ -183,6 +191,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
         };
+        // does not work
         dblh: double_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_HOLD";
@@ -193,6 +202,7 @@
             flavor = "tap-preferred";
             bindings = <&kp &kp>, <&kp>;
         };
+        // does not work
         trplh: triple_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "TRIPLE_HOLD";
@@ -211,6 +221,7 @@
             quick_tap_ms = <125>;
             global-quick-tap;
             flavor = "tap-preferred";
+            // hold does not work
             bindings = <&exit_num_spc_hold>, <&exit_num_spc_tab>;
         };
     };
@@ -222,7 +233,7 @@
             bindings = <
                 &mt LS(Y) Y &mt LS(H) H &mt LS(P) P &mt LS(M) M &mt LS(B) B                           &mt RS(X) X &mt RS(F) F &kp DOT &mt RS(U) U &kp COMMA
                 &mt LS(O) O &mt LS(N) N &mt LS(S) S &mt LS(I) I &mt LS(K) K                           &mt RS(J) J &mt RS(T) T &mt RS(R) R &mt RS(A) A &mt RS(C) C
-                &kp DQT &mt LS(W) W &mt LS(G) G &mt LS(L) L &kp EQUAL                                 &mt RS(V) V &mt RS(D) D &kp LPAR &kp RPAR &kp UNDER
+                &mt SQT DQT &mt LS(W) W &mt LS(G) G &mt LS(L) L &mt nt_eq EQUAL                       &mt MINUS UNDER &mt RS(D) D &kp LPAR &kp RPAR &mt RS(V) V
                         &slt LMOD LMOD &lt NAV SPACE  		                                                  &mt RS(E) E &slt RMOD RMOD
             >;
         };
@@ -230,9 +241,9 @@
         // good place for shortcuts like cmd+c/cmd+v
         left_mods_layer {
             bindings = <
-                &slt MAIN MAIN &none &none &none &none                                                &kp SLASH &kp QMARK &kp DOT &kp HASH &kp COMMA
+                &slt MAIN MAIN &LG(X) &LG(V) &LG(C) &none                                             &kp SLASH &kp QMARK &kp DOT &kp HASH &kp COMMA
                 &sht LSHIFT LSHIFT &sht LCTRL LCTRL &sht LALT LALT &sht LGUI LGUI &none               &kp STAR &kp COLON &kp LBRC &kp RBRC &dblh PIPE PIPE
-                &none &none &none &none &none                                                         &kp BSLH &kp AT &kp LPAR &kp RPAR &kp UNDER
+                &none &none &none &none &none                                                         &mt MINUS UNDER &kp AT &kp LPAR &kp RPAR &kp BSLH
                         &none &none  		                                                                  &none &slt FUN FUN
             >;
         };
@@ -260,8 +271,8 @@
             bindings = <
                 &none &none &none &kp PERCENT &kp MINUS                                               &kp SLASH &none &kp DOT &none &kp COMMA
                 &kp N7 &kp N5 &kp N3 &kp N1 &kp PLUS                                                  &kp STAR &kp N0 &kp N2 &kp N4 &kp N6
-                &none &none &none &kp N9 &kp EQUAL                                                    &none &kp N8 &kp LPAR &kp RPAR &none
-                        &none &ens 0 0		                                                                  &tog NUM &none
+                &none &none &none &kp N9 &kp EQUAL                                                    &mt MINUS UNDER &kp N8 &kp LPAR &kp RPAR &none
+                        &none &lt NAV exit_num_spc_tab		                                                                  &tog NUM &none
             >;
         };
 
