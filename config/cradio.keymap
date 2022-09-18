@@ -134,13 +134,16 @@
         exit_num_spc_tab: exit_num_spc_tab {
             label = "exit_num_spc_tab";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <0>;wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp SPACE &tog NUM>;
         };
         exit_num_spc_hold: exit_num_spc_hold {
             label = "exit_num_spc_hold";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &tog NUM>
                 , <&macro_press &mo NAV>
@@ -152,17 +155,20 @@
         nt_eq: nt_eq {
             label = "nt_eq";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <0>;wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&kp EXCL &kp EQUAL>;
         };
         gt_eq: gt_eq {
-            label = "gt_eq";
+            label = "gt_eq";wait-ms = <0>;
+            tap-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GT &kp EQUAL>;
         };
         lt_eq: lt_eq {
-            label = "lt_eq";
+            label = "lt_eq";wait-ms = <0>;
+            tap-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp EQUAL>;
