@@ -241,7 +241,7 @@
         // good place for shortcuts like cmd+c/cmd+v
         left_mods_layer {
             bindings = <
-                &slt MAIN MAIN &LG(X) &LG(V) &LG(C) &none                                             &kp SLASH &kp QMARK &kp DOT &kp HASH &kp COMMA
+                &slt MAIN MAIN &kp LG(X) &kp LG(V) &kp LG(C) &none                                    &kp SLASH &kp QMARK &kp DOT &kp HASH &kp COMMA
                 &sht LSHIFT LSHIFT &sht LCTRL LCTRL &sht LALT LALT &sht LGUI LGUI &none               &kp STAR &kp COLON &kp LBRC &kp RBRC &dblh PIPE PIPE
                 &none &none &none &none &none                                                         &mt MINUS UNDER &kp AT &kp LPAR &kp RPAR &kp BSLH
                         &none &none  		                                                                  &none &slt FUN FUN
